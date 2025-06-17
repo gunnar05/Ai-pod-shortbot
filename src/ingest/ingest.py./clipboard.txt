@@ -1,0 +1,13 @@
+import sys
+
+def ingest_video(path):
+    """
+    Tar in sökväg till video och bara skriver ut den för tillfället.
+    """
+    print(f"Ingesting video at: {path}")
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("Usage: python ingest.py <video_path>")
+    else:
+        ingest_video(sys.argv[1])
